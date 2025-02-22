@@ -1,0 +1,13 @@
+class Main {
+    
+    public static void main(String[] args){
+int no = 1;
+
+for(int i =5; i>0 ; i--){
+
+no = no * i;
+
+}
+
+System.out.println(no);
+}}
