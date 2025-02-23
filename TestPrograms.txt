@@ -32,3 +32,25 @@ public class Solution {
   }
 }
 ----------------------------------------------------------------------------------
+3.Factorial No
+--------------
+public class Solution {	
+ 
+	public static int getFactorial(int num) {
+      int x = 1;
+		while(num>0){
+         x *=  num;
+          num--;
+          
+        }
+      return x;
+  }
+  
+  public static void main(String[] args){
+    int num = 5;
+    int r = getFactorial(num);
+    System.out.println("The Factorial of "+num+" is: "+r);
+  }
+}
+----------------------------------------------------------------------------------
+4.
