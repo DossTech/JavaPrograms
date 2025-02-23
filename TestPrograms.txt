@@ -53,4 +53,35 @@ public class Solution {
   }
 }
 ----------------------------------------------------------------------------------
-4.
+4.Palindrome
+-------------
+public class Solution {
+    // Method to check if a number is a palindrome
+    public static boolean isPalindrome(int x) {
+        // Negative numbers are not palindromes
+        if (x < 0) {
+            return false;
+        }
+
+        int original = x; // Store the original number
+        int reversed = 0;
+
+        while (x > 0) {
+            int digit = x % 10;            // Extract the last digit
+            reversed = (reversed * 10) + digit; // Build the reversed number
+            x = x / 10;                    // Remove the last digit
+        }
+
+        return original == reversed; // Check if the original equals the reversed number
+    }
+
+    public static void main(String[] args) {
+        int x = 121;
+        if (isPalindrome(x)) {
+            System.out.println("It's a Palindrome");
+        } else {
+            System.out.println("It's Not a Palindrome");
+        }
+    }
+}
+-----------------------------------------------------------------------------------------
