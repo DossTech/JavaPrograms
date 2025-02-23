@@ -1,0 +1,17 @@
+1.Division of Two no
+------------------------
+public class Solution {
+	public static int divide(int dividend, int divisor)
+	{
+      
+      int x = dividend/divisor;
+      return x;
+  }
+  
+  public static void main(String[] args){
+    
+    int y = divide(10,5);
+    System.out.println("The Truncated value of Dividend and Divisor: "+ y);
+  }
+}
+--------------------------------------------------------------------------------
