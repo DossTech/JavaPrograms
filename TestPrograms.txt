@@ -85,3 +85,52 @@ public class Solution {
     }
 }
 -----------------------------------------------------------------------------------------
+5.Dividing a no withour fractinal value
+-------------------------------------------
+public class Solution {
+	public static int divide(int dividend, int divisor)
+	{
+      
+      int x = dividend/divisor;
+      return x;
+  }
+  
+  public static void main(String[] args){
+    
+    int y = divide(10,5);
+    System.out.println("The Truncated value of Dividend and Divisor: "+ y);
+  }
+}
+----------------------------------------------------------------------------------------
+6.String Reversing 
+------------------
+public class Solution {
+    
+	public static String reverseString(String input) {
+   
+      if(input == null){
+       return "Invalid Input";
+      }
+      
+      int length = input.length();
+       char[] c = new char[length];
+       int j = 0;
+      for(int i =length-1;i>=0;i--){
+ 
+     char c1 = input.charAt(i);
+      
+        c[j] = c1;
+        j++;
+      }
+     return new String(c);
+}
+
+public static void main(String[] args){
+
+  String input = "Testleaf";
+  String e = reverseString(input);
+  System.out.println(e);
+
+}
+}
+---------------------------------------------------------------------------------------------
