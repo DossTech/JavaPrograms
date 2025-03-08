@@ -1,0 +1,12 @@
+public class RemoveSpace{
+	
+	    
+	    public static void main(String[] args){
+	     
+	    	String s1 = "Ranoji   doss";
+	    	
+	    	String replaceAll = s1.replaceAll("\\s","");
+	    	System.out.println(replaceAll);
+	    	
+	    }
+	}
