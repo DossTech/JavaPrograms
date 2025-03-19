@@ -1,0 +1,92 @@
+package org.prep;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
+import org.apache.commons.io.FileUtils;
+
+//Remove white space
+
+public class FileOperations{
+	
+	    public static void main(String[] args) throws IOException{
+	     
+	    	//mkdir()
+	    	/*
+	    	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java");
+	    	boolean mkdir = f1.mkdir();
+	    	System.out.println(mkdir);
+	    
+	    	//mkdirs()
+	    	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm");
+	    	boolean mkdirs = f1.mkdirs();
+	    	System.out.println(mkdirs);
+	    	
+	    	
+	    	//createNewFile()
+	      	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm\\Java1.txt");
+	    	boolean newFile = f1.createNewFile();
+	    	System.out.println(newFile);
+	    	
+	    	
+	    	//canRead()
+	    	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm\\Java1.txt");
+	    	boolean canRead = f1.canRead();
+	    	System.out.println(canRead);
+	
+	    	
+	    	//canWrite()
+	    	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm\\Java1.txt");
+	    	boolean canWrite = f1.canWrite();
+	    	System.out.println(canWrite);
+	    	    
+	    	
+	    	//isHidden()
+	    	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm\\Java1.txt");
+	    	boolean hidden = f1.isHidden();
+	    	System.out.println(hidden);
+	    		
+	    	
+	    	//list()
+	    	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm\\");
+	    	String[] list = f1.list();
+	    	for (String string : list) {
+				System.out.println(string);
+			}
+			
+			
+	    	
+	    	//listFiles()
+	    	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm\\");
+	    	File[] listFiles = f1.listFiles();
+	    	for (File file : listFiles) {
+				System.out.println(file);
+			}
+			
+	    	
+	    	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm\\Java1.txt");
+	    	FileUtils.write(f1, "Hello World");
+	    	
+	    	
+	    	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm\\Java1.txt");
+	    	FileUtils.write(f1, "Hello World Java", false);
+	   
+	    	
+	    	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm\\Java1.txt");
+	    	FileUtils.write(f1, "Hello World Java with Selenium", true);
+	   
+	    	
+	    	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm\\Java1.txt");
+	    	List<String> lines = FileUtils.readLines(f1);
+	    	System.out.println(lines);
+	    	 	 		*/
+	    	
+	    	File f1 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm\\Java1.txt");
+	    	File f2 = new File("C:\\Users\\MANGO\\Desktop\\Java\\Jvm\\Java2.txt");
+	    	FileUtils.copyFile(f1, f2);
+	    }
+	}
+
+
+
