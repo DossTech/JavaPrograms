@@ -1,0 +1,65 @@
+package org.prep;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+import java.util.Scanner;
+
+import org.apache.commons.io.FileUtils;
+
+//Remove white space
+
+public class ScannerFiles{
+
+	public static void main(String[] args) throws IOException{
+
+		//Number
+		System.out.println("Enter a no: ");
+		Scanner s = new Scanner(System.in);
+		System.out.println(s.nextInt());
+		System.out.println();
+
+		//Byte
+		System.out.println("Enter a Byte: ");
+		System.out.println(s.nextByte());
+		System.out.println();
+
+		//short
+		System.out.println("Enter a short: ");
+		System.out.println(s.nextShort());
+		System.out.println();
+
+		//float
+		System.out.println("Enter a fractional no: ");
+		System.out.println(s.nextFloat());
+		System.out.println();
+		
+		//long
+		System.out.println("Enter a long no: ");
+		System.out.println(s.nextLong());
+		System.out.println();
+		
+		//boolean
+		System.out.println("Enter a boolean: ");
+		System.out.println(s.nextBoolean());
+		System.out.println();
+		
+		
+		//double
+		System.out.println("Enter a  double: ");
+		System.out.println(s.nextDouble());
+		System.out.println();
+		
+		//char
+		System.out.println("Enter a character: ");
+		System.out.println(s.next().charAt(0));
+		System.out.println();
+		
+		//next()
+		
+		//nextLine()
+	}
+}
+
+
+
