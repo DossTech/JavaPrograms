@@ -1,0 +1,55 @@
+public class StringPrograms{
+	String s1 = " Hello World";
+
+
+	public void mirrorImage() {
+
+		System.out.println("Original: "+s1);
+		System.out.print("Reversed: ");
+		for (int i = s1.length()-1; i >=0 ; i--) {
+			char s2 = s1.charAt(i);
+			System.out.print(s2);
+		}
+
+		System.out.println();
+		System.out.println();
+	}
+
+	public void wordsSwapped() {
+		System.out.println("Original: "+s1);
+		String[] s2 = s1.split(" ");
+
+		System.out.print("Word Reversed: " );
+		for (int i = s2.length-1; i >=0; i--) {
+			System.out.print(s2[i]+" ");
+		}
+	}
+	
+	public void wordsReversed() {
+		System.out.println();
+		System.out.println();
+		
+		String[] s2 = s1.split(" ");
+		String d = "";
+		System.out.println("Original: "+s1);
+		for (int i = 0; i < s2.length; i++) {
+			String s3 = s2[i];
+			
+			for (int j = s3.length()-1; j >=0; j--) {
+		       d =d+ s3.charAt(j);
+						}
+			d=d+" ";
+		}
+
+		System.out.println("wordsReversed: "+d);
+	}
+
+	public static void main(String[] args) throws IOException{
+		StringPrograms sp = new StringPrograms();
+		sp.mirrorImage();
+		sp.wordsSwapped();
+		sp.wordsReversed();
+
+
+	}
+}
