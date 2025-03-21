@@ -1,0 +1,41 @@
+public class Sample {
+//Find the duplicate characters in a String in Java
+	public static void main(String[] args) {
+
+		String s1 = "Hello World";
+		
+		char[] c1 = s1.toCharArray();
+		
+		Map<Character,Integer> m1 = new HashMap<Character,Integer>();
+		
+		for (char c2 : c1) {
+			
+			if (m1.containsKey(c2) ) {
+				
+				m1.put(c2, m1.get(c2)+1);
+				
+			} 
+						
+			else {
+
+				m1.put(c2, 1);
+				
+			}
+		}
+		
+		System.out.println(m1);
+		
+		//getting duplicates alone
+		System.out.println("Getting duplicates alone: ");
+		
+		Set<Character> keys = m1.keySet();
+		for (Character key : keys) {
+			
+			if (m1.get(key)>1) {
+				System.out.println(key);
+			}
+			
+		}
+	
+	}
+}
