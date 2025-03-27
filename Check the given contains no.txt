@@ -1,0 +1,19 @@
+//How to check whether user input is number or not in Java?
+public class NumberInput {
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+		System.out.println("Please enter a no: ");
+
+		String s1 = s.nextLine();
+
+		if (s1.matches("-?+\\d+(\\.\\d+)?")) {
+			System.out.println("The entered  no is: "+s1);
+		} else {
+			System.out.println("Please enter a valid no: ");
+		}
+
+//("-?+\\d+(\\.\\d+)?")
+
+	}}
