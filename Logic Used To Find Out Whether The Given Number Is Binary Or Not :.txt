@@ -1,0 +1,17 @@
+
+	public class Main {
+	    public static void main(String[] args) {
+	        System.out.println(isBinary(1010)); // true
+	        System.out.println(isBinary(1234)); // false
+	    }
+
+	    public static boolean isBinary(int num) {
+	        String str = Integer.toString(num);
+	        for (char c : str.toCharArray()) {
+	            if (c != '0' && c != '1') {
+	                return false;
+	            }
+	        }
+	        return true;
+	    }
+	}
