@@ -1,0 +1,19 @@
+//How to check whether user input is number or not in Java?
+public class Filters {
+
+	public static void main(String[] args) {
+
+		String[] s1 = {"Apple","Banana","Mango"};
+		String[] s2 = {"Apple","Banana","Leach"};
+		
+		for (int i = 0; i < s1.length; i++) {
+			for (int j = 0; j < s2.length; j++) {
+				
+				if (s1[i]==s2[j]) {
+					System.out.println(s1[i]);
+				} else {
+
+				}
+			}
+		}
+	}}
