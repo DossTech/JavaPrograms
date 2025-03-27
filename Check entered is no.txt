@@ -1,0 +1,28 @@
+package org.tcs;
+
+import java.util.Scanner;
+
+//How to check whether user input is number or not in Java?
+public class Anagram {
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+		System.out.println("Please enter a number: ");
+	//	String no = s.next();
+
+		if (s.hasNextInt()) {
+			int in = s.nextInt();
+			System.out.println("The entered no is: "+in);
+		} else if(s.hasNextDouble()) {
+			double dou = s.nextDouble();
+			System.out.println("The entered no is: "+dou);
+		}
+		else {
+			System.out.println("Please enter a valid no: ");
+		}
+
+
+
+
+	}}
