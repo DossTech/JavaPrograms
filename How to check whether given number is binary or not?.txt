@@ -1,0 +1,27 @@
+package org.tcs;
+
+import java.util.Scanner;
+
+//Logic Used To Find Out Whether The Given Number Is Binary Or Not :
+
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println(isBinary(1010)); // true
+		System.out.println(isBinary(1234)); // false
+	}
+
+	public static boolean isBinary(int num) {
+		String s = Integer.toString(num);
+
+		for (char c : s.toCharArray()) {
+			if ((c!='0')&&(c!='1')) {
+				return  false;
+			} 
+		}
+		return true;
+
+
+
+	}
+}
