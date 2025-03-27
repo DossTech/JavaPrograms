@@ -1,0 +1,31 @@
+package org.prep;
+
+//Java Program To Find All Pairs Of Elements In An Array Whose Sum Is Equal To A Given Number :
+
+public class SumInArray{
+
+	public	 static void main(String[] args) {
+		
+		sumInArray(new int[] {1,2,3,4,5,6,7,8,9,10},5);
+		sumInArray(new int[] {1,2,3,4,5,6,7,8,9,10},6);
+		sumInArray(new int[] {1,2,3,4,5,6,7,8,9,10},7);
+		sumInArray(new int[] {1,2,3,4,5,6,7,8,9,10},8);
+	}
+
+	private static void sumInArray(int[] is, int i) {
+	
+		for (int j = 0; j < is.length; j++) {
+			for (int j2 = j+1; j2 < is.length; j2++) {
+				
+				if (is[j]+is[j2]==i) {
+					System.out.println(is[j]+" + "+ is[j2] +" == " + i);
+				}
+				
+			}
+		}
+		
+	}
+}
+
+
+
