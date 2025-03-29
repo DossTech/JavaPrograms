@@ -1,0 +1,26 @@
+public class ListStack {
+
+	public static void main(String[] args) {
+
+		LinkedList<String> list = new LinkedList<String>();
+		list.add("C++");
+		list.add("Java");
+		list.add("Selenium");
+		list.add("SQL");
+		list.add("Manual");
+		list.add("API");
+		list.add("Appium");
+		list.add("Jenkins");
+		list.add("C++");
+
+		System.out.println("list: "+list);
+
+		System.out.println("First: ");	
+		list.removeFirstOccurrence("C++");
+		System.out.println(list);
+		System.out.println("Last: ");	
+		list.removeLastOccurrence("C++");
+		System.out.println(list);
+
+	}
+}
