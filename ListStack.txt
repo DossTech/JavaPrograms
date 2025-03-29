@@ -1,0 +1,23 @@
+//List as Stack
+//using push and pop
+
+public class ListStack {
+
+	public static void main(String[] args) {
+
+		LinkedList<String> list = new LinkedList<String>();
+		list.push("JAVA");
+		list.push("J2EE");
+		list.push("JSP");
+		list.push("SERVLETS");
+		list.push("JDBC");
+		list.push("J2EE");
+		System.out.println("list: "+list.pop());
+		System.out.println("list: "+list.pop());
+		System.out.println("list: "+list.pop());
+		System.out.println();
+
+		
+
+	}
+}
