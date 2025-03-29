@@ -1,0 +1,28 @@
+public class RndomNo{
+
+	public	 static void main(String[] args) {
+
+		List<String> l1 = new ArrayList<String>();
+		
+		l1.add("Java");
+		l1.add("Selenium");
+		l1.add("TestNG");
+		l1.add("Cucumber");
+		l1.add("SQL");
+		l1.add("POM");
+		l1.add("API");
+		
+		String s = "API";
+		String s1 = "SQL";
+		
+		boolean contains = l1.contains(s);
+		if (l1.contains(s)) {
+			System.out.println(l1.indexOf(s));
+		}
+		
+		if (l1.contains(s1)) {
+			System.out.println(l1.indexOf(s1));
+		}
+
+	}
+}
