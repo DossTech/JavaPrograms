@@ -1,0 +1,29 @@
+public class ListCloning {
+
+	public static void main(String[] args) {
+
+		 LinkedList<String> list = new LinkedList<String>();
+	        list.add("JAVA");
+	        list.add("J2EE");
+	        list.add("JSP");
+	        list.add("SERVLETS");
+	        list.add("JDBC");
+	        list.add("J2EE");
+	      System.out.println("list: "+list);
+		System.out.println();
+		
+		
+	      LinkedList<String> list1 = new LinkedList<String>();
+	      
+	      Object clone = list.clone();
+	      list1 = (LinkedList<String>) clone;
+	      
+	      System.out.println("list1: "+list1);
+	      
+	      
+	      LinkedList<String> list2 = new LinkedList<String>();
+	      
+	      list2.addAll(list);
+	      System.out.println("List2: "+list2);
+	}
+}
