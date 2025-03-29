@@ -1,0 +1,19 @@
+public class NoOfElements {
+
+	public static void main(String[] args) {
+
+		LinkedList<String> list = new LinkedList<String>();
+		list.add("C++");
+		list.add("Java");
+		list.add("Selenium");
+		list.add("SQL");
+		list.add("Manual");
+		list.add("API");
+		list.add("Appium");
+		list.add("Jenkins");
+		list.add("C++");
+
+		System.out.println(list.size());
+
+	}
+}
