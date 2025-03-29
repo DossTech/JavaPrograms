@@ -1,0 +1,22 @@
+public class RemovingRetrieving {
+
+	public static void main(String[] args) {
+
+		LinkedList<String> list = new LinkedList<String>();
+
+		list.add("Java");
+		list.add("C++");
+		list.add("Selenium");
+		list.add("SQL");
+		list.add("Manual");
+		list.add("API");
+		list.add("Appium");
+		list.add("Jenkins");
+
+		System.out.println(list.getFirst());
+		System.out.println(list.peekFirst());
+
+		System.out.println(list.getLast());
+		System.out.println(list.peekLast());
+	}
+}
